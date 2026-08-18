@@ -1,0 +1,39 @@
+.header {
+  position: relative;
+  overflow: hidden;
+
+  margin: 25px auto;
+  width: calc(100% - 40px);
+  max-width: 1400px;
+
+  padding: 75px 25px 70px;
+
+  color: #fff;
+  text-align: center;
+
+  border-radius: 28px;
+
+  background:
+    radial-gradient(
+      circle at 50% 120%,
+      rgba(255, 193, 7, 0.18),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(255, 255, 255, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #7f0000 0%,
+      #b71c1c 45%,
+      #e53935 100%
+    );
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.25),
+    0 5px 20px rgba(183, 28, 28, 0.35);
+
+  animation: headerAppear 0.8s ease-out;
+}
