@@ -1,0 +1,53 @@
+/* Seção dos Cards */
+section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+}
+
+/* Cada card */
+section article {
+    width: 300px;
+    padding: 30px;
+    background-color: #262626;
+    border-radius: 15px;
+    border: 1px solid #444;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+/* Título */
+section article h2 {
+    color: #ff9d00;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Texto */
+section article p {
+    color: #ddd;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Efeito ao passar o mouse */
+section article:hover {
+    transform: translateY(-10px);
+    border-color: #ff9d00;
+    box-shadow: 0 10px 25px rgba(255, 157, 0, 0.2);
+}
+
+/* Responsividade para celular */
+@media (max-width: 700px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section article {
+        width: 80%;
+    }
+}

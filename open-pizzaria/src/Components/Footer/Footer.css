@@ -1,0 +1,32 @@
+.footer {
+    width: 100%;
+    padding: 25px 0;
+    background-color: #1a1a1a;
+    border-top: 2px solid #ff9d00;
+    text-align: center;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer h1 {
+    margin: 0;
+    color: #ff9d00;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Efeito suave no texto */
+.footer h1:hover {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer h1 {
+        font-size: 14px;
+    }
+}

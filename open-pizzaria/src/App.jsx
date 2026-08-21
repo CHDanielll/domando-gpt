@@ -1,20 +1,32 @@
-import Header from './Componentes/Header';
-import Banner from './Componentes/Banner';
-import Cards from './Componentes/Cards';
-import "./Global.css";
-
+import Header from "./Components/Header";
+import Menu from "./Components/Menu";
+import Banner from "./Components/Banner";
+import Cards from "./Components/Cards";
+import Footer from "./Components/Footer";
+import "./Global.css"
 function App() {
 
   return (
     <div className="container">
 
+      <Header titleHeader="Bem-vindo à OpenPizzaria!"
+      textHeader="As melhores pizzas, feitas com carinho especial para você!">
+      </Header>
 
-      <Header />
+      <hr className="divider" />
+
+      <Menu />
+
       <Banner />
+
+
       <Cards />
 
-    </div>
 
+      <Menu />
+
+      <Footer textFooter="Todos os direitos reservados - 2026" />
+    </div>
 
   )
 }
