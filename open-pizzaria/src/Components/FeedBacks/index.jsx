@@ -42,6 +42,14 @@ const feedbacks = [
         nota: 4.5,
         comentario:
             "Uma ótima experiência. A equipa foi bastante atenciosa e o resultado final ficou excelente."
+    },
+    {
+        id: 6,
+        nome: "Fernandes Lima",
+        imagem: "https://i.pravatar.cc/80?img=6",
+        nota: 3,
+        comentario:
+            "Aceitavel, mas poderia ser melhor. Alguns detalhes não estavam de acordo com o que eu esperava."
     }
 ];
 
