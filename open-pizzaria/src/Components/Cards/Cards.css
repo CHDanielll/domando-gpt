@@ -4,31 +4,31 @@ section {
     justify-content: center;
     gap: 30px;
     padding: 50px 20px;
-    background-color: #1a1a1a;
+    background-color: #fff8e1;
 }
 
 /* Cada card */
 section article {
     width: 300px;
     padding: 30px;
-    background-color: #262626;
+    background-color: #b71c1c;
     border-radius: 15px;
-    border: 1px solid #444;
+    border: 1px solid #e65100;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 5px 15px rgba(183, 28, 28, 0.3);
     transition: 0.3s;
 }
 
 /* Título */
 section article h2 {
-    color: #ff9d00;
+    color: #fff8e1;
     font-size: 24px;
     margin-bottom: 15px;
 }
 
 /* Texto */
 section article p {
-    color: #ddd;
+    color: #ffffff;
     font-size: 16px;
     line-height: 1.6;
 }
@@ -36,8 +36,8 @@ section article p {
 /* Efeito ao passar o mouse */
 section article:hover {
     transform: translateY(-10px);
-    border-color: #ff9d00;
-    box-shadow: 0 10px 25px rgba(255, 157, 0, 0.2);
+    border-color: #e65100;
+    box-shadow: 0 10px 25px rgba(230, 81, 0, 0.35);
 }
 
 /* Responsividade para celular */
