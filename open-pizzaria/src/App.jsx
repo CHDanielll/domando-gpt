@@ -2,6 +2,7 @@ import Header from "./Components/Header";
 import Menu from "./Components/Menu";
 import Banner from "./Components/Banner";
 import Cards from "./Components/Cards";
+import Feedbacks from "./Components/FeedBacks";
 import Footer from "./Components/Footer";
 import "./Global.css"
 function App() {
@@ -19,9 +20,9 @@ function App() {
 
       <Banner />
 
-
       <Cards />
 
+      <Feedbacks />
 
       <Menu />
 
