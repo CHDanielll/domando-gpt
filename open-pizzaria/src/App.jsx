@@ -1,10 +1,8 @@
 import Header from "./Components/Header";
 import Menu from "./Components/Menu";
-import Banner from "./Components/Banner";
-import Cards from "./Components/Cards";
-import Feedbacks from "./Components/FeedBacks";
 import Footer from "./Components/Footer";
 import "./Global.css"
+import Router from "./Router";
 function App() {
 
   return (
@@ -16,15 +14,10 @@ function App() {
 
       <hr className="divider" />
 
-      <Menu />
 
-      <Banner />
+      <Router />
 
-      <Cards />
-
-      <Feedbacks />
-
-      <Menu />
+      
 
       <Footer textFooter="Todos os direitos reservados - 2026" />
     </div>

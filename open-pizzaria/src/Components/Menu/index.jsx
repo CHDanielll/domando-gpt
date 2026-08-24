@@ -1,12 +1,15 @@
+import { Link } from "react-router-dom"
 import "./Menu.css"
 
 const Menu = () => {
     return (
         <>
             <nav className="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
+                <ul> 
+                    <li>
+                    <Link to="/">Home</Link>
+                    </li>
+                    <li><Link to="/sobre">Sobre</Link></li>
                     <li><a href="#">Cardápio</a></li>
                     <li>
                         <ul className="submenu">

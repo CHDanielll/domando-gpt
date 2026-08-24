@@ -1,0 +1,129 @@
+.sobre {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: #fff8ef;
+}
+
+.sobre-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.sobre-container h1 {
+  color: #c62828;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.introducao {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+/* ABAS */
+
+.abas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Esconde os radio buttons */
+
+.abas input {
+  display: none;
+}
+
+/* Botões das abas */
+
+.abas label {
+  padding: 14px 22px;
+  background: #eeeeee;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.abas label:hover {
+  background: #ffd54f;
+}
+
+/* Conteúdo */
+
+.conteudo {
+  display: none;
+  width: 100%;
+  margin-top: 25px;
+  padding: 35px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.conteudo h2 {
+  color: #c62828;
+  margin-bottom: 15px;
+}
+
+.conteudo p {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* Mostra o conteúdo da aba selecionada */
+
+#historia:checked ~ .historia {
+  display: block;
+}
+
+#ingredientes:checked ~ .ingredientes {
+  display: block;
+}
+
+#qualidade:checked ~ .qualidade {
+  display: block;
+}
+
+#equipe:checked ~ .equipe {
+  display: block;
+}
+
+/* Muda a cor da aba selecionada */
+
+#historia:checked + label,
+#ingredientes:checked + label,
+#qualidade:checked + label,
+#equipe:checked + label {
+  background: #c62828;
+  color: white;
+}
+
+/* Responsivo */
+
+@media (max-width: 600px) {
+  .sobre-container h1 {
+    font-size: 30px;
+  }
+
+  .abas {
+    flex-direction: column;
+  }
+
+  .abas label {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .conteudo {
+    padding: 25px;
+  }
+}
