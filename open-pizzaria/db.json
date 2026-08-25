@@ -1,0 +1,25 @@
+{
+  "posts": [
+    { "id": "1", "title": "a title", "views": 100 },
+    { "id": "2", "title": "another title", "views": 200 }
+  ],
+  "comments": [
+    { "id": "1", "text": "a comment about post 1", "postId": "1" },
+    { "id": "2", "text": "another comment about post 1", "postId": "1" }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    { "id": "1", "nome": "João Silva", "email": "joao@email.com", "telefone": "11999990001" },
+    { "id": "2", "nome": "Maria Santos", "email": "maria@email.com", "telefone": "11999990002" },
+    { "id": "3", "nome": "Pedro Oliveira", "email": "pedro@email.com", "telefone": "11999990003" },
+    { "id": "4", "nome": "Ana Souza", "email": "ana@email.com", "telefone": "11999990004" },
+    { "id": "5", "nome": "Carlos Pereira", "email": "carlos@email.com", "telefone": "11999990005" },
+    { "id": "6", "nome": "Juliana Costa", "email": "juliana@email.com", "telefone": "11999990006" },
+    { "id": "7", "nome": "Lucas Almeida", "email": "lucas@email.com", "telefone": "11999990007" },
+    { "id": "8", "nome": "Fernanda Lima", "email": "fernanda@email.com", "telefone": "11999990008" },
+    { "id": "9", "nome": "Rafael Martins", "email": "rafael@email.com", "telefone": "11999990009" },
+    { "id": "10", "nome": "Camila Rodrigues", "email": "camila@email.com", "telefone": "11999990010" }
+  ]
+}
