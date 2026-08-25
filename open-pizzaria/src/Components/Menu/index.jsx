@@ -9,8 +9,12 @@ const Menu = () => {
                     <li>
                     <Link to="/">Home</Link>
                     </li>
-                    <li><Link to="/sobre">Sobre</Link></li>
-                    <li><a href="#">Cardápio</a></li>
+                    <li>
+                        <Link to="/sobre">Sobre</Link>
+                    </li>
+                    <li>
+                        <Link to="/cardapio">Cardápio</Link>
+                    </li>
                     <li>
                         <ul className="submenu">
                             <li>
@@ -18,7 +22,9 @@ const Menu = () => {
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">FAQ</a></li>
+                    <li>
+                        <Link to="/faq">FAQ</Link>
+                    </li>
                 </ul>
             </nav>
         </>
