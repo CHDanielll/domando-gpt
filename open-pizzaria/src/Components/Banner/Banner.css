@@ -1,41 +1,234 @@
-.banner {
-    width: 100%;
-    max-width: 1000px;
-    height: 300px;
-    margin: 30px auto;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+/* =========================================
+   PÁGINA DE USUÁRIOS
+========================================= */
+
+.containerUsers {
+    width: 90%;
+    max-width: 950px;
+
+    margin: 50px auto;
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.containerUsers h1 {
+    margin: 0;
+
+    color: #b71c1c;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/* linha abaixo do título */
+
+.containerUsers h1::after {
+    content: "";
+
     display: block;
-    transition: transform 0.4s ease;
+
+    width: 730px;
+    height: 4px;
+
+    margin-top: 10px;
+
+    background: #e65100;
+
+    border-radius: 10px;
 }
 
-/* Efeito ao passar o mouse */
-.banner:hover img {
-    transform: scale(1.05);
+
+/* =========================================
+   BOTÃO VOLTAR
+========================================= */
+
+.containerUsers > a {
+    display: inline-flex;
+    align-items: center;
+
+    margin-top: 18px;
+    margin-bottom: 30px;
+
+    padding: 9px 16px;
+
+    color: #b71c1c;
+    background: #fff5f2;
+
+    border: 1px solid #f1d3cc;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.25s ease;
 }
+
+.containerUsers > a:hover {
+    color: white;
+    background: #b71c1c;
+
+    border-color: #b71c1c;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   LISTA
+========================================= */
+
+.contentUsers {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* =========================================
+   CARD DO USUÁRIO
+========================================= */
+
+.contentUsers article {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 24px;
+
+    background: #fffaf8;
+
+    border: 1px solid #f0ded8;
+
+    border-radius: 14px;
+
+    transition: 0.25s ease;
+}
+
+
+/* efeito */
+
+.contentUsers article:hover {
+    background: #ffffff;
+
+    border-color: #e65100;
+
+    box-shadow: 0 6px 18px rgba(183, 28, 28, 0.10);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   ÍCONE / AVATAR
+========================================= */
+
+.contentUsers article::before {
+    content: "K";
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    margin-right: 18px;
+
+    flex-shrink: 0;
+
+    color: white;
+
+    background: #b71c1c;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   INFORMAÇÕES
+========================================= */
+
+.contentUsers article strong {
+    display: block;
+
+    color: #333;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* nome */
+
+.contentUsers article strong:first-child {
+    margin-bottom: 6px;
+
+    color: #222;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+/* telefone */
+
+.contentUsers article strong:last-child {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   RESPONSIVO
+========================================= */
 
 @media (max-width: 600px) {
-    .banner {
-        height: 200px;
-        margin: 20px auto;
-        border-radius: 12px;
+
+    .containerUsers {
+        width: 92%;
+
+        margin: 30px auto;
+
+        padding: 25px 18px;
+
+        border-radius: 14px;
     }
-}
 
-.banner {
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
+    .containerUsers h1 {
+        font-size: 25px;
+    }
 
-.banner img {
-    width: 100%;
-    display: block;
+    .contentUsers article {
+        padding: 17px;
+    }
+
+    .contentUsers article::before {
+        width: 42px;
+        height: 42px;
+
+        margin-right: 13px;
+    }
 }
