@@ -3,25 +3,40 @@ import { useEffect, useState } from "react"
 import "./Users.css"
 
 export default function index() {
-    // UseState do react para gerenciar o estado dos usuários
-    const [usuarios, setUsuarios] = useState([])
-    
-    // hook useEffect para buscar os usuários da API quando o componente for montado
 
+    // UseState do React para gerenciar o estado dos usuários
+    const [usuarios, setUsuarios] = useState([])
+
+    // Busca os usuários quando o componente for montado
     useEffect(() => {
-        console.log("Oláaaaaa");
+
+        fetch("http://localhost:3000/users")
+            .then((response) => response.json())
+            .then((data) => setUsuarios(data))
+            .catch((error) => console.error("Erro na API", error))
+
     }, [])
 
-  return (
-    <main className="containerUsers">
-      <h1>Listade de Usuarios</h1>
-      <section className="contentUsers">
-        <article>
-            <strong>Nome: Kaio</strong>
-            <strong>Telefone: 11 99999-9999</strong>
-        </article>
-      </section>
-      <Link to="/">Voltar para HOME</Link>
-    </main>
-  )
+    console.log(usuarios)
+
+    return (
+        <main className="containerUsers">
+
+            <h1>Lista de Usuários</h1>
+
+            <section className="contentUsers">
+            {usuarios.map((user) => (
+                <article key={user.id}>
+                    <strong>Nome: {user.nome}</strong>
+                    <strong>Email: {user.email}</strong>
+                    <strong>Telefone: {user.telefone}</strong>
+                </article>
+            ))}
+
+            </section>
+
+            <Link to="/">Voltar para HOME</Link>
+
+        </main>
+    )
 }

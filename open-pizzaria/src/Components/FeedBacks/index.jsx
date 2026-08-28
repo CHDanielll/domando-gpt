@@ -92,21 +92,7 @@ const Feedbacks = () => {
       </section>
 
 
-    // <section className="feedbacks">
-      //   <article className="contentBack">
-        //     <img src="https://fastly.picsum.photos/id/562/200/200.jpg?hmac=F4ylYRNFPH6rDzYo48_NUieJXXI2yaMl9ElwGeFQHZo" width="100px" height="100px" alt="user" />
-        //     <h1>
-              
-          //     lorem ipsum
-
-        //     </h1>
-        //     <img src={estrela} width="30px" height="30px" alt="stars" />
-        //     <strong> 5.0</strong>
-        //   <p>
-        //     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-       //    </p>
-      //   </article>
-    // </section>
+    
   )
 }
 

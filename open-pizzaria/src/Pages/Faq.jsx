@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Faq.css'
 
 export default function Faq() {
@@ -55,13 +55,43 @@ export default function Faq() {
     }
   ]
 
+
+  const [coments, setComents] = useState([])
+
+
+  useEffect(() => {
+
+    fetch("http://localhost:3000/comments")
+      .then((response) => response.json())
+      .then((data) => setComents(data))
+      .catch((error) => console.error("Erro na API", error))
+
+  }, [])
+
+
   return (
     <section className="faq">
+
+
+      <section className="contentComents">
+
+        {coments.map((coment) => (
+          <article key={coment.id}>
+
+            <strong>Nome: {coment.nomeA}</strong>
+            <strong>Avaliação: {coment.avaliacao}</strong>
+            <strong>Comentário: {coment.comentario}</strong>
+          </article>
+        ))}
+
+      </section>
+
 
       {faq.map((faq) => (
         <article className="contentBack" key={faq.id}>
 
           <div className="profile">
+
             <img
               src={faq.imagem}
               width={60}
@@ -72,7 +102,9 @@ export default function Faq() {
             <div>
               <h3>{faq.nome}</h3>
             </div>
+
           </div>
+
 
           <div className="faq-content">
 
@@ -88,6 +120,7 @@ export default function Faq() {
 
         </article>
       ))}
+
 
     </section>
   )
