@@ -18,6 +18,10 @@ const Menu = () => {
                 </li>
 
                 <li>
+                    <Link to="/cadastro">Cadastro</Link>
+                </li>
+
+                <li>
                     <Link to="/users">Usuários</Link>
                 </li>
 
